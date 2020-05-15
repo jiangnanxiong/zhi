@@ -5,7 +5,7 @@ from datetime import datetime
 from util.email_test import *
 import time
 
-cases = unittest.defaultTestLoader.discover("../testcase", pattern='test_login.py')
+cases = unittest.defaultTestLoader.discover("./testcase", pattern='test_login.py')
 
 if __name__ == '__main__':
     with open('./testreport/report-{}.html'.format(datetime.now().strftime('%Y%m%d%H%M')), 'w',
