@@ -14,7 +14,7 @@ pipeline {
 
     stage('run') {
       steps {
-        bat 'python run_discover.py'
+        bat 'python testsuite/run_discover.py'
       }
     }
 
